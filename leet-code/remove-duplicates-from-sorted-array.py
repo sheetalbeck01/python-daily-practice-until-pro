@@ -30,11 +30,7 @@ class SolutionLeet:
                 unique.append(nums[i])
                 temp = nums[i]
 
-        k = 0
-        for i in range(len(unique)):
-            k+=1
-
-        
+        k = len(unique)        
         print(k, "nums=", unique)
             
 
