@@ -37,3 +37,19 @@ class SolutionLeet:
 sol2 = SolutionLeet()
 
 sol2.remove_duplicates([0,0,1,1,1,2,2,3,3,4])
+
+# # -------------------------------------------------------
+# I've to rearrange the orignal nums according to leetcode question
+# Doing here in short wihout class first
+
+num1 = [0,0,1,1,1,2,2,3,3,4]
+first = num1[0]
+index = 1
+for i in range(1, len(num1)):
+    if num1[i] != first:
+        num1[index] = num1[i]
+        first = num1[i]
+        index += 1
+
+print("NUM:" , num1)
+
