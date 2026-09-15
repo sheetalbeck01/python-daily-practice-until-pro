@@ -53,3 +53,20 @@ for i in range(1, len(num1)):
 
 print("NUM:" , num1)
 
+# Final LeetCode 
+
+class FinalSolution:
+    def removeDuplicate(self, nums):
+        first = nums[0]
+        index = 1
+        for i in range(1, len(nums)):
+            if nums[i] != first:
+                nums[index] = nums[i]
+                first = nums[i]
+                index += 1
+        print("nums=", nums[:index])
+        return index
+
+finalSol = FinalSolution()
+
+print(finalSol.removeDuplicate([0,0,1,1,1,2,2,3,3,4]))
