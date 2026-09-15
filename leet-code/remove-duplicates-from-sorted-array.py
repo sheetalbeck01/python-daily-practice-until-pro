@@ -20,7 +20,7 @@ sol = Solution()
 print(sol.remove_duplicates([1,1,1,1,1,1,3,5,7,8,8,8,9]))
 
 # -------------------------------------------------------
-# but this solution creating new list without duplicates but in leetcode I've to rearrange nums
+# but this solution is creating new list without duplicates but in leetcode I've to rearrange nums
 class SolutionLeet:
     def remove_duplicates(self, nums):
         temp = nums[0]
