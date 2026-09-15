@@ -36,15 +36,9 @@
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
-        num1 = 0
-        num2 = 0
-
         for i in range(len(nums)):
-            num1 = nums[i]
-            for j in range(i + 1, len(nums)):
-                num2 = nums[j]
-
-                if num1 + num2 == target:
+            for j in range(i+1, len(nums)):
+                if nums[i] + nums[j]:
                     return [i,j]
 
 solution = Solution()
